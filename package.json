@@ -1,6 +1,6 @@
 {
   "name": "db-timespent-register",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Checks when date exists in a object",
   "main": "index.js",
   "type": "module",
