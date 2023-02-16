@@ -28,8 +28,8 @@ const findDateOrCreateOne = (object, startDateMs, endDateMs) => {
 
     //prefab checkin date for better readability too
     const checkYear = object[initialYear]
-    const checkMonth = object[initialYear][initialMonth]
-    const checkDay = object[initialYear][initialMonth][initialDay]
+    const checkMonth = object[initialYear]?.[initialMonth]
+    const checkDay = object[initialYear]?.[initialMonth]?.[initialDay]
 
     if (!checkYear) object[initialYear] = month
     if (!checkMonth) object[initialYear][initialMonth] = day
