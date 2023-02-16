@@ -12,7 +12,7 @@ const findDateOrCreateOne = (object, startDateMs, endDateMs) => {
     if (!endDateMs) throw new Error("Missing endDateMs param, is required for calculating the time spent.")
     if (typeof endDateMs !== "number") throw new Error(`Invalid endDateMs value, expected: number, recived: ${typeof endDateMs}`)
 
-    const initialDate = new Date(dateMs)
+    const initialDate = new Date(startDateMs)
     const initialYear = initialDate.getFullYear()
     const initialMonth = initialDate.getMonth() + 1
     const initialDay = initialDate.getDate()
