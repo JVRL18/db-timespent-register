@@ -16,7 +16,7 @@ const findDateOrCreateOne = (object, startDateMs, endDateMs) => {
     const initialYear = initialDate.getFullYear()
     const initialMonth = initialDate.getMonth() + 1
     const initialDay = initialDate.getDate()
-    
+
     //prefab values for better readability
     const timeSpent = endDateMs - startDateMs
     const day = {
