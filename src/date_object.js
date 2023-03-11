@@ -5,7 +5,7 @@
  * @param {Number} endDateMs
  */
 
-const findDateOrCreateOne = (object, startDateMs, endDateMs) => {
+export function findDateOrCreateOne(object, startDateMs, endDateMs) {
     if (!startDateMs) throw new Error("Missing StartDateMs param, is required for calculating the time spent.")
     if (typeof startDateMs !== "number") throw new Error(`Invalid startDateMs value, expected: number, recived: ${typeof startDateMs}`)
 
@@ -43,5 +43,3 @@ const findDateOrCreateOne = (object, startDateMs, endDateMs) => {
     }
 
 }
-
-export default findDateOrCreateOne
